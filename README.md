@@ -73,6 +73,6 @@ Just like that we have a blog built and deployed with amazing performance out th
 
 ## Learning Resources
 
-- ![Gatsby Website](https://www.gatsbyjs.org/)
-- ![Netlify Website](https://www.netlify.com/)
-- ![Getting Started with Gatsby Level up Tuts](https://www.youtube.com/watch?v=b2H7fWhQcdE)
+- [Gatsby Website](https://www.gatsbyjs.org/)
+- [Netlify Website](https://www.netlify.com/)
+- [Getting Started with Gatsby Level up Tuts](https://www.youtube.com/watch?v=b2H7fWhQcdE)
