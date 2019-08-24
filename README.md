@@ -1,61 +1,63 @@
-<a href="https://novela.narative.co" target="_blank">
-<img src="https://raw.githubusercontent.com/narative/gatsby-theme-novela-example/master/assets/gatsby-theme-novela-hero.jpg" alt="gatsby-novela-theme hero image" />
-</a>
+# JAM in 15
 
-<br/>
+## What's a JAM stack app?
 
-# Gatsby Starter Novela
+> "A modern web development architecture based on client-side JavaScript, reusable APIs, and prebuilt Markup"
 
-With minimal styling and maximum features — including multiple homepage layouts, built-in social sharing and dark mode — Novela makes it easy to start publishing beautiful articles and stories with Gatsby.
+- Mathias Biilmann (CEO & Co-founder of Netlify).
 
-Novela is built by the team at [Narative](https://www.narative.co), and built for everyone that loves the web.
+J - Javascript
+A - APIs
+M - Markup
 
-<div>
-<a href="https://novela.narative.co" target="_blank">
-<img src="https://raw.githubusercontent.com/narative/gatsby-theme-novela-example/master/assets/gatsby-theme-novela-cta-demo.jpg" alt="gatsby-novela-theme live demo" width="295px" />
-</a>
-</div>
+## Why JAM?
 
-<div>
-<a href="https://www.narative.co/design/open/novela" target="_blank">
-<img src="https://raw.githubusercontent.com/narative/gatsby-theme-novela-example/master/assets/gatsby-theme-novela-cta-figma.jpg" alt="gatsby-novela-theme figma link" width="295px" />
-</a>
-</div>
+- Scalable. User is requesting static files that are parsed in their browser. No server necessary.
+- Security. Smaller attack vector because there is no server or database involved.
+- Speed. User requests static files only.
+- Flexible. Rely on APIs for anything you need.
+- Less Expensive. Static files can be hosted for free in a lot of cases through Netlify, S3, Now, and other services.
 
-# Using Gatsby Starter Novela
+## Why not JAM?
 
-This guide will take you through setting up Novela with Gatsby Starter Novela.
+- Shift in thinking about a typical content website. Clients can still bring their own CMS, but all of the Wordpress plugins and stuff need to be implemented in the frontend stack.
+- Not for every use case. Shines for content heavy websites, but for advanced web applications it gets in your way more than helps from experience.
+- You have to rebuild your apps when things change. For massive websites or realtime websites this could be less than ideal.
+- Less control. When building a JAM app you grab and rely on a lot of external tools like Netlify, Auth0, Firebase, CMSes, AWS Lambda, and other services that may not conform to your company's security standards
 
-### Step 1: Starter installation
+## What's Gatsby?
 
-##### With `gatsby-cli`:
+Gatsby is a framework for building extremely fast websites with React and GraphQL.
 
-```sh
-gatsby new novela-site https://github.com/narative/gatsby-starter-novela
-```
-
-##### With `git clone`:
+## Demo!
 
 ```sh
-git clone git@github.com:narative/gatsby-starter-novela.git novela-site
+# Create a new Gatsby App
+gatsby new gatsby-starter-novela https://github.com/narative/gatsby-starter-novela
 
-cd novela-site
+# Add missing dep that the theme needs
+yarn add gatsby-plugin-mailchimp
 
-yarn
-```
+cd gatsby-starter-novela
 
-### Step 2: Develop & Build
-
-Once installed or cloned locally and all packages are installed you can begin developing your site.
-
-```sh
-# Run localhost
+# Starts development server and graphql helper
 yarn dev
 
-# Build your Gatsby site
+# Walk through folder structure and make a change to the blog
+
+# Build the project
 yarn build
+
+# Commit and push to remote
+git add -A
+git commit -m "Initial commit"
+git add origin
+git remote add origin https://github.com/mwood23/jam-demo.git
+git push -u origin master
+
+# Head over to Netlify and hook it up
 ```
 
-### Help
+## Thank you!
 
-For more information visit the [Theme repository](https://github.com/narative/gatsby-theme-novela)
+Just like that we have a blog built and deployed with amazing performance out the box.
