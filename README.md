@@ -3,8 +3,8 @@
 ## What's a JAM stack app?
 
 > "A modern web development architecture based on client-side JavaScript, reusable APIs, and prebuilt Markup"
-
-- Mathias Biilmann (CEO & Co-founder of Netlify).
+>
+> - Mathias Biilmann (CEO & Co-founder of Netlify).
 
 J - Javascript
 A - APIs
@@ -23,7 +23,7 @@ M - Markup
 - Shift in thinking about a typical content website. Clients can still bring their own CMS, but all of the Wordpress plugins and stuff need to be implemented in the frontend stack.
 - Not for every use case. Shines for content heavy websites, but for advanced web applications it gets in your way more than helps from experience.
 - You have to rebuild your apps when things change. For massive websites or realtime websites this could be less than ideal.
-- Less control. When building a JAM app you grab and rely on a lot of external tools like Netlify, Auth0, Firebase, CMSes, AWS Lambda, and other services that may not conform to your company's security standards
+- Less control. When building a JAM app you grab and rely on a lot of external tools like Netlify, Auth0, Firebase, a CMS, AWS Lambda, and other services that may not conform to your company's security standards.
 
 ## What's Gatsby?
 
@@ -60,4 +60,19 @@ git push -u origin master
 
 ## Thank you!
 
-Just like that we have a blog built and deployed with amazing performance out the box.
+Just like that we have a blog built and deployed with amazing performance out the box. It has...
+
+- React and Graphql plus styling of your own no choice. Yay no PHP
+- Global CDN
+- HTTPS for free
+- Continuous integration with branch deploys
+- Super fast
+- Bring CMS of your choice
+- AWS Lambda, forms, and auth ready with Netlify
+- PWA ready
+
+## Learning Resources
+
+- ![Gatsby Website](https://www.gatsbyjs.org/)
+- ![Netlify Website](https://www.netlify.com/)
+- ![Getting Started with Gatsby Level up Tuts](https://www.youtube.com/watch?v=b2H7fWhQcdE)
